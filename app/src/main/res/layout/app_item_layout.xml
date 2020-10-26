@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/app_item_width"
+    android:layout_height="@dimen/app_item_height"
+    android:layout_margin="@dimen/app_item_margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="@dimen/app_logo_width"
+        android:layout_marginTop="@dimen/app_logo_top_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="@dimen/app_logo_height"/>
+
+    <TextView
+        android:id="@+id/appName"
+        android:textSize="@dimen/app_name_text_size"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/app_name_margin_bottom"
+        android:layout_marginTop="@dimen/app_name_margin_top"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginStart="@dimen/app_name_margin_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
